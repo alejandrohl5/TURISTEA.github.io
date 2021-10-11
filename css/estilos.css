@@ -10,6 +10,9 @@ body{
 header{
     width: 100%;
     background: #4E94AB;
+    position: sticky;
+    top: 0px;
+    position: -webkit-sticky;
 }
 
 #navegacion {
@@ -76,10 +79,10 @@ header label:hover{
    #navegacion:checked ~ .menu {
        margin: 0;    
    }
-   
-   
 }
 
+
+/*imagen de portada */
 
 
 
