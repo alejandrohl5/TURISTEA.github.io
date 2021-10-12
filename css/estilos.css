@@ -10,9 +10,6 @@ body{
 header{
     width: 100%;
     background: #4E94AB;
-    position: sticky;
-    top: 0px;
-    position: -webkit-sticky;
 }
 
 #navegacion {
@@ -179,10 +176,7 @@ header label:hover{
 
 
 
-footer{
-    border: 1px solid black;
-    margin-top: 30px;
-}
+
 
 
 .encontrar{
@@ -190,18 +184,21 @@ footer{
 }
 .icono a{
     margin-left: 50px;
-    border: 1px solid black;
+   text-decoration: none;
 }
-.amar{
-    width:100px;
-    height: 100px;
-    padding: 100px;
 
+.icono{
+    margin-left: 100px;
 }
+
+article{
+    margin-top: 100px;
+}
+
 
 .extra{
     
-    margin-top: -100px;
+    margin-top: -25px;
     text-align: center;
     
 }
@@ -209,12 +206,30 @@ footer{
 .extra a{
     text-decoration: none;
     padding: 10px;
-    border-right: 1px solid black;
-    color: #000;
-    background: rgba(0,0,0,0.3);
-    opacity: 0.5;
+    color: #fff;
+    background: #706060;
+    opacity: 0.9;
 }
 
 .extra a:hover{
-  background: rgba(8, 1, 1, 0.3);
+  background:#000000;
 }
+
+.turistea{
+    display: flex;
+    margin-left: 100px;
+    font-size: 13px;
+}
+
+.parrafo_final{
+    text-align: center;
+    margin-top: -50px;
+}
+
+footer{
+   background: #4E94AB;
+   margin-top: 50px;
+   padding: 10px;
+   color: #fff;
+}
+
