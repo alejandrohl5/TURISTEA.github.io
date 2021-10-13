@@ -170,11 +170,13 @@ header label:hover{
 }
 .lista1{
     font-size: 30px;
+    font-weight: bold;
 }
 
 .lista2{
     margin-left: 300px;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .seguridad{
