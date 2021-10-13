@@ -1,4 +1,3 @@
-
 /*menu responsive sin boostrap*/
 
 body{
@@ -77,7 +76,6 @@ header label:hover{
        margin: 0;    
    }
 }
-
 .portada{
     
     display: inline-block;
@@ -87,14 +85,10 @@ header label:hover{
     color: #fff;
     
 }
-
-.imagen2{
-    width: 110px;
-    height: 42px;
-}
-/*imagen de portada */
+/* fin del header */
 
 
+/* imagen con animacion */
 
 .imagen_animacion{
     margin-top: 30px;
@@ -156,41 +150,23 @@ header label:hover{
 }
 
 
-
-
-.contenedor_general{
-
-    display: flex;
-    margin-left: 700px;
-    margin-top: 20px;
-}
-
-.conocer{
-    text-align: center;
-    margin-top: 50px;
-}
-
-.referencia{
-    text-align: center;
-}
-
-
-
-
-
-
-.encontrar{
-    margin-left: 40px;
-}
-.icono a{
-    margin-left: 50px;
-   text-decoration: none;
-}
-
-.icono{
+.mapa{
+    margin-top: 100px;
     margin-left: 100px;
 }
 
+
+.donde{
+    float: right;
+    margin-top: 280px;
+    margin-right: 300px;
+    font-size: 50px;
+    font-family: serif;
+}
+
+
+
+/* footer y article */
 article{
     margin-top: 100px;
 }
@@ -233,3 +209,14 @@ footer{
    color: #fff;
 }
 
+.encontrar{
+    margin-left: 40px;
+}
+.icono a{
+    margin-left: 50px;
+   text-decoration: none;
+}
+
+.icono{
+    margin-left: 100px;
+}
