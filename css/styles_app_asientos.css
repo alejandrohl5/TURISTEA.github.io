@@ -1,0 +1,228 @@
+.box-bus .head-bus {
+    height: 35px;
+    background: #caad07;
+    position: relative;
+    border-radius: 5px 5px 0px 0px ;
+}
+.mt-2, .my-2 {
+    margin-top: .5rem!important;
+}
+.box-bus .bus{
+    position: relative;
+}
+.box-bus  .manija-right-asientobus  {
+    position: absolute;
+    height: 0;
+    width: 3px;
+    border-color: #689ee0;
+    border-style: solid;
+    border-width: 0 2px 25px;
+    border-radius: 2px 2px 2px 0;
+    margin: 13px 0 0;
+    left: 45px;
+}
+.box-bus  .respaldo-asientobus  {
+    position: absolute;
+    height: 0;
+    width: 43px;
+    border-color: #689ee0;
+    border-style: solid;
+    border-width: 0 0 4px;
+    margin: 34px 0 0;
+    left: 2px;
+}
+.box-bus  .cabecera-asientobus  {
+    position: absolute;
+    height: 0;
+    width: 26px;
+    border-color: #689ee0;
+    border-style: solid;
+    border-width: 0 0 4px;
+    border-radius: 4px;
+    margin: 32px 0 0;
+    left: 11px;
+}
+
+.box-bus  .element-bus  button.asiento  {
+    box-shadow: 0 1px 3px rgb(0 0 0 / 95%);
+    transition-duration: .2s;
+    border-radius: 5px;
+}
+ 
+.box-bus  .element-bus  button  {
+    font-size: 14px;
+    border: 0 solid;
+    height: 100%;
+    width: 100%;
+    padding-left: 12px;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
+    touch-action: manipulation;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+    border-radius: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+hoja de estilo de user-agent
+button {
+    appearance: auto;
+    
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+ .box-bus  .element-bus  button  span.simbolo_moneda  {
+    position: absolute;
+    font-size: 10px;
+    top: 10px;
+    left: 4px;
+    font-weight: 200;
+}
+Atributo style {
+    background: rgb(255, 255, 255);
+    color: rgb(85, 85, 85);
+}
+ .box-bus  .element-bus  button  {
+    font-size: 14px;
+    border: 0 solid;
+    height: 100%;
+    width: 100%;
+    padding-left: 12px;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.box-bus  .element-bus  button  span.number  {
+    height: 20px;
+    width: 20px;
+    background: #98aabb;
+    color: #fff;
+    position: absolute;
+    top: -4px;
+    right: -5px;
+    border-radius: 50%;
+    font-size: 12px;
+    padding-top: 2px;
+    font-weight: 200;
+    display: none;
+}
+.box-bus  .element-bus  {
+    position: absolute;
+    width: 47px;
+    height: 35px;
+    background-size: 22px 22px;
+    border-radius: 2px;
+    padding: 0;
+}
+ *, ::after, ::before {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+.box-bus{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 5px;
+}
+body {
+    background: #fff;
+    font-family: Ubuntu,Arial,Helvetica,sans-serif;
+}
+body {
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    font-feature-settings: 'tnum';
+}
+.ant-alert, body {
+    margin: 0;
+    color: rgba(0,0,0,.65);
+    font-size: 14px;
+}
+body {
+    font-variant: tabular-nums;
+    font-feature-settings: 'tnum';
+    font-weight: 400;
+    text-align: left;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.box_bussvg_elementescalera1{
+    margin-left: 200px;
+    margin-top: 4px;
+    height: 40px;
+    width: 70px;
+}
+.box_bussvg_elementescalera2{
+    margin-left: 30px;
+    height: 40px;
+    width: 70px;
+}
+
