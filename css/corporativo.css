@@ -1,0 +1,182 @@
+/*menu responsive sin boostrap*/
+
+body{
+    margin: 0px;
+    font-family: serif;
+}
+
+
+header{
+    width: 100%;
+    background: #4E94AB;
+}
+
+#navegacion {
+    display: none;
+}
+
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;  
+    border-right:1px solid #fff; 
+}
+
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.menu ul{
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu li{
+   border-right: 1px solid #fff;
+}
+
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media (max-width:1000px) {
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: #4E94AB;
+        width: 70%;
+        margin: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+
+   #navegacion:checked ~ .menu {
+       margin: 0;    
+   }
+}
+.portada{
+    
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    margin-left: 100px;
+    color: #fff;
+    
+}
+
+/* imagen con animacion */
+
+.imagen_animacion{
+    margin-top: 30px;
+    margin-left: 10px;
+     width: 99%;
+     height: 600px;
+    border-radius: 0.1%;
+   
+    animation: victor 10s infinite alternate;
+}
+
+@keyframes victor{
+    0%,15%{
+        background-image: url(/imagenes/principal.jpg.png);
+        opacity: 1;
+    }
+
+    16%,19%{
+        opacity: 0.1;
+    }
+
+    20%,45%{
+        background-image: url(/imagenes/principal.jpg.png);
+        opacity: 1;
+    }
+
+     46%,49%{
+         opacity: 0.1;
+     }       
+
+
+
+     50%,70%{
+         background-image: url(/imagenes/principal.jpg.png);
+         opacity: 1;
+     }
+
+
+     71%,74%{
+         opacity: 0.1;
+     }
+
+
+     75%,90%{
+         background-image: url(/imagenes/principal.jpg.png);
+         opacity: 1;
+     }
+
+     91%,94%{
+         opacity: 0.1;
+     }
+
+     95%,100%{
+         background-image: url(/imagenes/principal.jpg.png);
+         opacity: 1;
+     }
+
+
+}
+
+
+.ingreso{
+    text-align: center;
+    color: #000000;
+    
+}
+.contacto{
+    position: absolute;
+    top: 81%;
+    margin-left: 60px;
+}
+
+.input1{
+    margin-right: 40px;
+}
+
+
+
+.email{
+    position: absolute;
+    top: 81%;
+    margin-left: 60px;
+}
+.input2{
+    margin-right: 40px;
+}
+
+
+
+.proceso{
+    text-align: center;
+    margin-top: 20px;
+}

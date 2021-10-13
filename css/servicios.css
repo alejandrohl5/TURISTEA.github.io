@@ -76,7 +76,6 @@ header label:hover{
        margin: 0;    
    }
 }
-
 .portada{
     
     display: inline-block;
@@ -86,12 +85,6 @@ header label:hover{
     color: #fff;
     
 }
-
-.imagen2{
-    width: 110px;
-    height: 42px;
-}
-/*imagen de portada */
 
 
 
@@ -154,38 +147,43 @@ header label:hover{
 
 }
 
-
-.agencias{
-   text-align: center;
-   margin-top: 100px;
-}
-
-.cantidad{
+.dos_imagenes{
+    margin-top: 100px;
+   
     margin-left: 300px;
-    margin-top: 200px;
+}
+.principal1{
+    
+    border: 1px solid blue;
+   
+}
+
+.principal2{
+    border: 1px solid red;
+    margin-left: 200px;
+}
+
+
+.listas{
+    display: flex;
+    margin-left: 280px;
+}
+.lista1{
     font-size: 30px;
-    font-weight: bold;
 }
 
-.rutas{
-    margin-left: 1000px;
-    margin-top: -200px;
+.lista2{
+    margin-left: 300px;
+    font-size: 30px;
 }
 
-
-
-.encontrar{
-    margin-left: 40px;
-}
-.icono a{
-    margin-left: 50px;
-   text-decoration: none;
+.seguridad{
+    text-align: center;
+    font-size: 35px;
+    font-family: serif;
 }
 
-.icono{
-    margin-left: 100px;
-}
-
+/* footer y article */
 article{
     margin-top: 100px;
 }
@@ -228,3 +226,14 @@ footer{
    color: #fff;
 }
 
+.encontrar{
+    margin-left: 40px;
+}
+.icono a{
+    margin-left: 50px;
+   text-decoration: none;
+}
+
+.icono{
+    margin-left: 100px;
+}
