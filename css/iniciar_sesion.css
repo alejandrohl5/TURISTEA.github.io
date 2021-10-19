@@ -1,113 +1,25 @@
-/*menu responsive sin boostrap*/
-
 body{
     margin: 0px;
-    font-family: serif;
-}
-
-
-header{
-    width: 100%;
-    background: #4E94AB;
-}
-
-#navegacion {
-    display: none;
-}
-
-
-header label {
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;  
-    border-right:1px solid #fff; 
-}
-
-
-header label:hover{
-    cursor: pointer;
-    background: rgba(0,0,0,0.3);
-}
-
-.menu ul{
-    margin: 0px;
-    list-style: none;
     padding: 0px;
-    display: flex;
-    justify-content: flex-end;
-}
-.menu li{
-   border-right: 1px solid #fff;
-}
-
-
-.menu li:hover{
-    background: rgba(0,0,0,0.3);
-}
-
-.menu li a{
-    display: block;
-    padding: 15px 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-
-@media (max-width:1000px) {
-    header label{
-        display: block;
-    }
-    .menu{
-        position: absolute;
-        background: #4E94AB;
-        width: 70%;
-        margin: -70%;
-        transition: all 0.5s;
-    }
-    .menu ul{
-        flex-direction: column;
-    }
-    .menu li{
-        border-top: 1px solid #fff;
-    }
-
-   #navegacion:checked ~ .menu {
-       margin: 0;    
-   }
-}
-
-.portada{
+    background-size: cover; 
+    font-family: sans-serif;
+    height: 100vh;
+    background-size: 100% 100%;
     
-    display: inline-block;
-    position: absolute;
-    top: -6px;
-    margin-left: 100px;
-    color: #fff;
     
 }
 
-.imagen2{
-    width: 110px;
-    height: 42px;
-}
-/*imagen de portada */
 
-
-
-.imagen_animacion{
-    margin-top: 30px;
-    margin-left: 10px;
-     width: 99%;
-     height: 600px;
-    border-radius: 0.1%;
-   
+.animcacion_imagen{
+     width: 100%;
+     height: 977px;
+    background-size: 100% 100%;
     animation: victor 10s infinite alternate;
 }
 
 @keyframes victor{
     0%,15%{
-        background-image: url(/imagenes/principal.jpg.png);
+        background-image: url(/imagenes/WhatsApp\ Image\ 2021-10-18\ at\ 18.58.54.jpeg);
         opacity: 1;
     }
 
@@ -116,7 +28,7 @@ header label:hover{
     }
 
     20%,45%{
-        background-image: url(/imagenes/principal.jpg.png);
+        background-image: url(/imagenes/WhatsApp\ Image\ 2021-10-18\ at\ 18.58.54\ \(1\).jpeg);
         opacity: 1;
     }
 
@@ -127,7 +39,7 @@ header label:hover{
 
 
      50%,70%{
-         background-image: url(/imagenes/principal.jpg.png);
+         background-image: url(/imagenes/WhatsApp\ Image\ 2021-10-18\ at\ 18.58.54\ \(2\).jpeg);
          opacity: 1;
      }
 
@@ -138,7 +50,7 @@ header label:hover{
 
 
      75%,90%{
-         background-image: url(/imagenes/principal.jpg.png);
+         background-image: url(/imagenes/WhatsApp\ Image\ 2021-10-18\ at\ 18.58.55.jpeg);
          opacity: 1;
      }
 
@@ -147,12 +59,138 @@ header label:hover{
      }
 
      95%,100%{
-         background-image: url(/imagenes/principal.jpg.png);
+         background-image: url(/imagenes/WhatsApp\ Image\ 2021-10-18\ at\ 18.58.55\ \(1\).jpeg);
          opacity: 1;
      }
 
 
 }
+
+
+
+
+.login-box{
+    border-radius: 10px;
+    width: 400px;
+    height: 440px;
+    background: rgb(42, 139, 231);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.login-box .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.login-box h1{
+    margin: 0px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.contrasena{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    display: block;
+}
+
+.correo {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.login-box input[type = "email"],
+.login-box input[type = "password"] {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.boton_registro {
+    border: none;
+    height: 40px;
+    background: rgb(219, 5, 5);
+    color: #000;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.no {
+    margin-top: 50px;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(2, 1, 1);
+    cursor: pointer;
+}
+ .no a {
+    color: #000000;
+    
+    font-weight: bold;
+    
+ }
+
+ .no a:hover {
+    color: rgb(0, 25, 251);
+    font-weight: bold;
+    font-size: 15px;
+    transition: .5s ease all;
+ }
+
+ .boton_activo:hover {
+    background: rgb(32, 140, 228);
+    animation: boton 2s infinite alternate ease;
+ }
+
+ @keyframes boton {
+     0%{background: red;}
+     10%{background: green;}
+     20%{background: yellow;}
+     30%{background: blue;}
+     40%{background: orange;}
+     50%{background: pink;}
+     60%{background: greenyellow;}
+     70%{background: darkmagenta;}
+     80%{background: yellowgreen;}
+     90%{background: lightskyblue;}
+     100%{background: orchid;}
+
+ }
+
 
 
 
