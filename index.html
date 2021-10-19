@@ -46,49 +46,49 @@
 </div>
 
 
-        <section>
-           <form action="">
+        <section class="seccion_general">
+            <h1 class="conocer">Hola, ¿A dónde nos vamos de viaje?</h1>
+           <form action="guardar">
             <div class="contenedor_general">
            
-            <div class="contenedor1">
-          <select name="" id="seleccion">
-               <option value="1">lima</option>
 
-                <option value="2">chimbote</option>
-                <option value="3">
+            <div class="contenedor1">
+            <input list="destinos_de_ida"  class="destinos_de_ida">
+            <datalist id="destinos_de_ida">
+              <option disabled value="select"></option>
+               <option  value="lima"></option>
+
+                <option value="cusco"></option>
+                <option value="trujillo">
                     trujillo
                 </option>
-                <option value="4">piura</option>
+                <option value="piura"></option>
 
-                <option value="2">chimbote</option>
-                <option value="5">
-                    cajamarca
-                </option>
-           </select>
+                <option value="chimbote"></option>
+                <option value="cajamarca"></option>
+            </datalist>
         </div>
 
 
 
         <div class="contenedor2">
-            <select name="" id="seleccion2">
-                 <option value="1">lima</option>
+            <input list="destinos_turisticos" class="destino_de_retorno">
+                <datalist id="destinos_turisticos">
+                <option disabled value="selecciona una opcion"></option>
+                 <option value="lima"></option>
   
-                  <option value="2">chimbote</option>
-                  <option value="3">
-                      trujillo
-                  </option>
-                  <option value="4">piura</option>
-  
-                  <option value="2">chimbote</option>
-                  <option value="5">
-                      cajamarca
-                  </option>
-             </select>
+                  <option value="cuzco"></option>
+                  <option value="cajamarca"></option>
+                  <option value="trujillo"></option>
+                  <option value="chimbote"></option>
+                  <option value="arequipa"></option>
+                </datalist>
+            
           </div>
 
           <div class="menu3">
-              <form id="calendario">
-                  <input type="datetime-local" class="input_calendario">
+              <form id="calendario" class="calendario1">
+                  <input type="datetime-local" class="input_calendarios1">
                
 
               </form>
@@ -98,16 +98,16 @@
 
 
           <div class="menu4">
-            <form id="calendario3">
-                <input type="datetime-local" class="input_calendarios">
+            <form id="calendario2" class="calendario2">
+                <input type="datetime-local" class="input_calendarios2">
                 
             </form>
 
         </div>
 
 
-            <div>
-                <input class="btn-enviar" id="boton" type="submit" name="enviar" value="enviar">
+            <div class="btn-enviar">
+                <button class="boton enviado"><span>Enviar</span></button>
             </div>
 
         </div>
@@ -117,17 +117,40 @@
 
 
 
-<h1 class="conocer"> <b><em>Conóce nuestros destinos y viaja</em></b></h1>
 
-<div class="referencia">
-<a href="/páginas/destinos.html"><img src="/imagenes/principal.jpg.png" alt=""></a>
-<a href="/páginas/destinos.html"><img src="/imagenes/principal.jpg.png" alt=""></a>
-<a href="/páginas/destinos.html"><img src="/imagenes/principal.jpg.png" alt=""></a>
+    <h1 class="conocenos">Conoce nuestros destinos y Viaja</h1>
 
+
+
+
+
+
+<div class="contendor_general_imagenes">
+
+
+    <div class="referencia">
+
+<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/WhatsApp Image 2021-10-18 at 18.58.56.jpeg"  alt=""></a>
+<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/WhatsApp Image 2021-10-18 at 18.58.55.jpeg" alt=""></a>
+<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/WhatsApp Image 2021-10-18 at 18.58.55 (3).jpeg" alt=""></a>
+
+<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/WhatsApp Image 2021-10-18 at 18.58.55 (3).jpeg" alt=""></a>
+<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/WhatsApp Image 2021-10-18 at 18.58.55 (3).jpeg" alt=""></a>
+<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/WhatsApp Image 2021-10-18 at 18.58.55 (3).jpeg" alt=""></a>
+
+    </div>
+
+    <div class="nose_que_poner_xd">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ab libero officiis molestias reprehenderit totam, explicabo, et impedit ullam nemo illum? Eligendi odit rem debitis in ea deleniti laboriosam excepturi?
+        Molestiae perspiciatis soluta, maiores, asperiores at similique, dolorem nostrum iure quae vitae doloremque necessitatibus! Pariatur deserunt ex porro eaque autem culpa aliquam hic consequatur atque. Natus deleniti cumque architecto fugiat.    
+    </div>
 </div>
 
 
-<article><div class="pie_de_pagina">
+
+
+<article>
+    <div class="pie_de_pagina">
     <div class="icono">
     <h2 class="encontrar">encuentranos en:</h2>
     <a href="https://es-la.facebook.com"><i style="color: rgb(48, 48, 240);" class="amar fab fa-facebook"></i></a>
@@ -144,16 +167,16 @@
     <a href="#">proteccion de datos</a>
     <a href="#">libro de reclamaciones</a>
     </div>
-    </div></article>
+    </div>
+</article>
 
 
 
-<footer>
-
+<footer class="pie_de_pagina_footer">
 
 <div class="turistea">
     <h1 class="imagen3">
-        TURISTEA
+        <img class="logo_imagen" src="./imagenes/logo1.jpeg" width="" alt="">
     </h1>
    
 </div>
@@ -162,6 +185,9 @@
 </footer>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/javascript/javascript.js"></script>
+    <script src="./javascript/javascript.js"></script>
 
 
 </body>
