@@ -170,8 +170,74 @@ header label:hover{
 }
 
 .imagen_venta_corporativa{
-    width: 15%;
+    width: 16%;
+    height: 300px;
     display: flex;
-    border-radius: 70%;
+    border-radius: 150%;
     margin-left: 150px;
+    
+}
+
+.imagen_venta_corporativa:hover{
+    box-shadow: 3px 3px 30px black;
+}
+
+.parrafo_de_venta{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 100px;
+}
+
+.titulo_venta{
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(53, 130, 231);
+}
+
+
+
+.parrafo_corporativo_1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+
+.parrafo_venta_productos_1{
+    border-bottom: 4px solid rgb(53, 130, 231);
+    display: block;
+    margin-right: 500px;
+    margin-left: 500px;
+    color: rgb(93, 86, 86);
+}
+
+
+.parrafo_venta_de_productos{
+    text-align: center;
+    margin-top: 100px;
+    font-size:30px;
+    color: rgb(53, 130, 231);
+}
+
+.propuesta_de_valor_clase{
+    margin-top: 100px;
+   text-align: center;
+ font-weight: bold;
+ color:rgb(53, 130, 231) ;
+}
+
+.imagenes_de_propuesta_de_valor{
+ font-size: 30px;
+ 
+}
+
+.ventas_corporativas{
+    width: 100%;
+    padding: 0px;
+    margin-bottom: -7px;
+    height: 600px;
 }
