@@ -146,30 +146,7 @@ body{
     padding-bottom: 5px;
 }
 
-.no {
-    margin-top: 50px;
-}
 
-.login-box a {
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: rgb(2, 1, 1);
-    cursor: pointer;
-}
- .no a {
-    color: #000000;
-    
-    font-weight: bold;
-    
- }
-
- .no a:hover {
-    color: rgb(0, 25, 251);
-    font-weight: bold;
-    font-size: 15px;
-    transition: .5s ease all;
- }
 
  .boton_activo:hover {
     background: rgb(32, 140, 228);
@@ -193,4 +170,31 @@ body{
 
 
 
+
+
+ 
+ .no {
+    margin-top: 50px;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(2, 1, 1);
+    cursor: pointer;
+}
+ .no a {
+    color: #000000;
+    
+    font-weight: bold;
+    
+ }
+
+ .no a:hover {
+    color: rgb(0, 25, 251);
+    font-weight: bold;
+    font-size: 15px;
+    transition: .5s ease all;
+ }
 

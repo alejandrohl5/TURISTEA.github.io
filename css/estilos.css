@@ -44,14 +44,16 @@ header label:hover{
 .menu li{
   
     border-left: 2px groove #b9aaaa;
-   
+    font-size: 20px;
    
 }
 
 
 .menu li:hover{
-    background-color: #4a8edd;
+    background-color: #ebeef3;
     margin-top: 2px;
+    font-size: 23px;
+    box-shadow: 2px 2px 10px black;
 }
 
 .menu li a{
