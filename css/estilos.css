@@ -50,9 +50,9 @@ header label:hover{
 
 
 .menu li:hover{
+    
     background-color: #ebeef3;
-    margin-top: 2px;
-    font-size: 23px;
+    font-size: 20px;
     box-shadow: 2px 2px 10px black;
 }
 
@@ -310,7 +310,7 @@ article{
     position: absolute;
     border-radius: 10px;
         margin-top: -30px;
-        margin-left: 380px;
+        margin-left: 390px;
         margin-right: 400px;
         padding: 25px 0px 40px;
         background-color: #fff;
