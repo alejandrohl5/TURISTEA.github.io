@@ -19,7 +19,7 @@ body{
 
 @keyframes victor{
     0%,15%{
-        background-image: url(/imagenes/WhatsApp\ Image\ 2021-10-18\ at\ 18.58.54.jpeg);
+        background-image: url(/imagenes/imagen8.jpeg);
         opacity: 1;
     }
 
@@ -28,7 +28,7 @@ body{
     }
 
     20%,45%{
-        background-image: url(/imagenes/WhatsApp\ Image\ 2021-10-18\ at\ 18.58.54\ \(1\).jpeg);
+        background-image: url(/imagenes/imagen7.jpeg);
         opacity: 1;
     }
 
@@ -39,7 +39,7 @@ body{
 
 
      50%,70%{
-         background-image: url(/imagenes/WhatsApp\ Image\ 2021-10-18\ at\ 18.58.54\ \(2\).jpeg);
+         background-image: url(/imagenes/imagen6.jpeg);
          opacity: 1;
      }
 
@@ -50,7 +50,7 @@ body{
 
 
      75%,90%{
-         background-image: url(/imagenes/WhatsApp\ Image\ 2021-10-18\ at\ 18.58.55.jpeg);
+         background-image: url(/imagenes/imagen5.jpeg);
          opacity: 1;
      }
 
@@ -59,7 +59,7 @@ body{
      }
 
      95%,100%{
-         background-image: url(/imagenes/WhatsApp\ Image\ 2021-10-18\ at\ 18.58.55\ \(1\).jpeg);
+         background-image: url(/imagenes/imagen1.jpeg);
          opacity: 1;
      }
 
