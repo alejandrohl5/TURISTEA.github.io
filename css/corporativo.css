@@ -317,6 +317,10 @@ main {
 	border: 3px solid #bb2929;
 }
 
+.formulario__mensaje-exito{
+    margin-right: 135px;
+}
+
 
 /* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px) {
