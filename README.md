@@ -5,4 +5,5 @@ James Ramirez Roman
 Edwin Neil Aaron Ramirez Robles
 Milagros Usquiano Silva
 Victor Alejandro Urtado Lopez
+Edgar Jean pierre Garcia Egusqiza 
 #Fecha:25/11/2021
