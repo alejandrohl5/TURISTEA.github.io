@@ -234,7 +234,7 @@ footer{
     margin-left: 75px;
     margin-top: 1px;
     box-shadow: 2px 2px 20px rgb(0, 0, 0);
-    background-image: url(/imagenes/imagen8.jpeg);
+    background-image: url(../imagenes/imagen8.jpeg);
     background-size: 100% 100%;
     animation: victor 10s infinite alternate ease;
     box-shadow: 2px 2px 30px rgb(65, 61, 61);
@@ -242,7 +242,7 @@ footer{
 }
 @keyframes victor {
     0%,15%{
-        background-image: url(/imagenes/imagen7.jpeg);
+        background-image: url(../imagenes/imagen7.jpeg);
         opacity: 1;
     }
 
@@ -251,7 +251,7 @@ footer{
     }
 
     20%,45%{
-        background-image: url(/imagenes/imagen6.jpeg);
+        background-image: url(../imagenes/imagen6.jpeg);
         opacity: 1;
     }
 
@@ -262,7 +262,7 @@ footer{
 
 
      50%,70%{
-         background-image: url(/imagenes/imagen5.jpeg);
+         background-image: url(../imagenes/imagen5.jpeg);
          opacity: 1;
      }
 
@@ -273,7 +273,7 @@ footer{
 
 
      75%,90%{
-         background-image: url(/imagenes/imagen4.jpeg);
+         background-image: url(../imagenes/imagen4.jpeg);
          opacity: 1;
      }
 
@@ -282,7 +282,7 @@ footer{
      }
 
      95%,100%{
-         background-image: url(/imagenes/imagen3.jpeg);
+         background-image: url(../imagenes/imagen3.jpeg);
          opacity: 1;
      }
 

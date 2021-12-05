@@ -1,250 +1,128 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TURISTEA</title>
-  <link rel="stylesheet" href="/css/estilos.css">
-    <link rel="stylesheet" href="./css/estilos.css">
-  <script src="https://kit.fontawesome.com/0e65fc2f8c.js" crossorigin="anonymous"></script>
-
-
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <header>
+    <style>
+        .fondo1{
+            background-color: green;
             
+            color:white;
+                }
+        .fondo2{
+            background-color: orange; 
+            color:black;
+                }
+        .fondo3{
+            background-color: purple; 
+            color:white;
+                }
+        .heig{
+            height: 180px;
+            border:1px black;
+        } 
 
-            <input type="checkbox" id="navegacion">
-            <label for="btn-menu"><i class="fas fa-bars"></i></label>
-        <nav>
-           <div class="portada"><a href="./index.html"><img class="imagen2" src="./imagenes/logo1.jpeg"></a></div>
-                <div class="menu">
-                    
-                    <ul>
-                    <li><a href="/páginas/destinos.html"><b> <em>Destinos</em></b></a></li>
-                    <li><a href="/páginas/servicios.html"><b><em> Servicios</em></b></a></li>
-                    <li><a href="/páginas/corporativo.html"><b><em>Corporativo</em></b></a></li>
-                    <li><a href="/páginas/encuentranos.html"><b><em>Encuéntranos</em></b></a></li>
-                     <li><a href="/páginas/inciar_sesion.html"><b><em>Iniciar Sesión</em></b></a></li>
-                    </ul>
-
-                </div>
-               
-        </nav>
-              
-       
+        #Publicidad img{
+            width: 100%;
+            height: 300px;
+            padding: 25px;
+            margin: 0px !important;
+        } 
+        .carusel{
+             height: 20% !important;
+             width: 70% !important;
+        }
+    </style>
  
-</header>
+    <div class="container-fluid fondo2  " id="Menu">
+        <nav class="navbar d-flex justify-content-evenly">
+            <a href="#">Inicio</a>
+            <a href="#">Inicio</a>
+            <a href="#">Inicio</a>
+            <a href="#">Inicio</a>
+        </nav>
+    </div>
 
+    <section class="carusel fondo2 " id="Imagenes" >
+        <div id="carouselExampleInterval carusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./imagenes/Fondo1.jpg" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item min-vh-100"  data-bs-interval="2000">
+                <img src="./imagenes/Fondo2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item min-vh-100">
+                <img src="./imagenes/Fondo.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section> 
 
-
-<main>
-
-<div class="imagen_animacion">
-    
-</div>
-
-
-        <section class="seccion_general">
-            <h1 class="conocer">Hola, ¿A dónde nos vamos de viaje?</h1>
-           <form action="guardar">
-            <div class="contenedor_general">
-           
-
-            <div class="contenedor1">
-            <input list="destinos_de_ida"  class="destinos_de_ida" placeholder="De donde viaja">
+    <div class="container fondo1 " id="buscador_viaje">
+        <h1 class="conocer text-center">Hola, ¿A dónde nos vamos de viaje?</h1>
+        <div class="d-flex justify-content-center">
+        <!--<form action="."> -->
+            <input list="destinos_de_ida"  placeholder="De donde viaja" id="d_ida">
             <datalist id="destinos_de_ida">
-              <option disabled value="select"></option>
-               <option  value="lima"></option>
-
+                <option disabled value="select"></option>
+                <option value="lima"></option>
                 <option value="cusco"></option>
-                <option value="trujillo">
-                    trujillo
-                </option>
+                <option value="trujillo"></option>
                 <option value="piura"></option>
-
                 <option value="chimbote"></option>
                 <option value="cajamarca"></option>
             </datalist>
-        </div>
+            <input list="destinos_turisticos"   placeholder="A donde viaja" id="d_tur">
+            <datalist id="destinos_turisticos">
+                <option disabled value="selecciona"></option>
+                <option value="lima"></option> 
+                <option value="cuzco"></option>
+                <option value="cajamarca"></option>
+                <option value="piura"></option>
+                <option value="chimbote"></option>
+                <option value="arequipa"></option>
+            </datalist> 
+                <input type="datetime-local" class="input_calendarios1" id="fet"> 
+                <input type="datetime-local" class="input_calendarios2" value="Fecha de salida"> 
+                <button class="boton enviado" onclick=myFunction()><span>Enviar</span></button> 
+         <!-- </form> -->
+        </div>    
+    </div>
 
+    <div class="container fondo2 " id="Resultado"></div> 
 
-
-        <div class="contenedor2">
-            <input list="destinos_turisticos" class="destino_de_retorno" placeholder="A donde viaja">
-                <datalist id="destinos_turisticos">
-                <option disabled value="selecciona una opcion"></option>
-                 <option value="lima"></option>
-  
-                  <option value="cuzco"></option>
-                  <option value="cajamarca"></option>
-                  <option value="trujillo"></option>
-                  <option value="chimbote"></option>
-                  <option value="arequipa"></option>
-                </datalist>
+    <section class="container fondo2" id="Publicidad"> 
+        <h1 >Conoce nuestros destinos y Viaja</h1> 
+        <div class="row"> 
+            <div class="col-lg-4"><img src="./imagenes/imagen1.jpeg" alt=""></div>
+            <div class="col-lg-4"><img src="./imagenes/imagen2.jpeg" alt=""></div> 
+            <div class="col-lg-4"><img src="./imagenes/imagen3.jpeg" alt=""></div>
+            <div class="col-lg-4"><img src="./imagenes/imagen4.jpeg" alt=""></div>
+            <div class="col-lg-4"><img src="./imagenes/imagen5.jpeg" alt=""></div>
+            <div class="col-lg-4"><img src="./imagenes/imagen6.jpeg" alt=""></div>
             
-          </div>
-
-          <div class="menu3">
-              <form id="calendario" class="calendario1">
-                  <input type="datetime-local" class="input_calendarios1" id="fet">
-               
-
-              </form>
-
-          </div>
-
-
-
-          <div class="menu4">
-            <form id="calendario2" class="calendario2">
-                <input type="datetime-local" class="input_calendarios2" value="Fecha de salida">
-                
-            </form>
-
         </div>
+    </section> 
 
-
-            <div class="btn-enviar">
-                <button class="boton enviado"><span>Enviar</span></button>
-            </div>
-
-        </div>
-    </form>
-        </section>
-    </main>
-
-
-
-
-    <h1 class="conocenos">Conoce nuestros destinos y Viaja</h1>
-
-
-
-
-
-
-<div class="contendor_general_imagenes">
-
-
-    <div class="referencia">
-
-<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/imagen1.jpeg"  alt=""></a>
-<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/imagen8.jpeg" alt=""></a>
-<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/imagen7.jpeg" alt=""></a>
-
-<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/imagen5.jpeg" alt=""></a>
-<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/imagen4.jpeg" alt=""></a>
-<a href="/páginas/destinos.html"><img class="imagen_foto" src="/imagenes/imagen3.jpeg" alt=""></a>
-
-    </div>
-
-</div>
-
-
-
-<div class="generando_todo">
-
-<div class="te_ofrecemos_comida">
-<h1 class="ofrecemos">Viva la Emoción de viajar</h1>
-</div>
-
-<div class="enlaces_de_ofrecimiento">
-<a href="/páginas/te_ofrecemos.html"><img class="te_ofrecemos" src="/imagenes/imagen2.jpeg"></a>
-
-<!-- <div class="division_de_titulos1"-->
-<!-- <h1 class="parrafo_de_ofrecimiento">Nuestra Flota</h1> -->
-<!-- </div> --> 
-
-<a href="/páginas/viaja_seguro.html"><img class="te_ofrecemos" src="/imagenes/imagen8.jpeg"></a>
-<!-- <div class="division_de_titulos2"-->
-<!-- <h1 class="parrafo_de_ofrecimiento">Ten un viaje Seguro</h1> -->
- <!-- </div> --> 
-
-<a href="#"><img class="te_ofrecemos" src="/imagenes/imgen9.jpeg"></a>
-
-<!-- <div class="division_de_titulos2"-->
-<!-- <h1 class="parrafo_de_ofrecimiento">destinos</h1> -->
- <!-- </div> --> 
-
-<a href="/páginas/venta_corporativa.html"><img class="te_ofrecemos" src="/imagenes/imagen12.jpeg"></a>
-<!-- <div class="division_de_titulos2"-->
-<!-- <h1 class="parrafo_de_ofrecimiento">Unete al programa viajemos</h1> -->
- <!-- </div> --> 
-<a href="#"><img class="te_ofrecemos" src="/imagenes/imagen13.jpeg"></a>
-<!-- <div class="division_de_titulos2"> -->
-<!-- <h1 class="parrafo_de_ofrecimiento">Viaje corporativo</h1> -->
- <!-- </div> -->
-<a href=""><img class="te_ofrecemos" src="/imagenes/imagen10.jpeg"></a>
-
-<!-- <div class="division_de_titulos2"-->
-<!-- <h1 class="parrafo_de_ofrecimiento">Gift Card</h1> -->
-<!-- </div> --> 
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article>
-    <div class="pie_de_pagina">
-    <div class="icono">
-    <h2 class="encontrar">encuentranos en:</h2>
-    <a href="https://es-la.facebook.com"><i style="color: rgb(48, 48, 240);" class="amar fab fa-facebook"></i></a>
-    <a href="https://twitter.com "><i style="color: rgb(64, 116, 240);" class="amar fab fa-twitter-square"></i></a>
-    <a href="https://www.instagram.com"><i style="color: rgb(246, 44, 44);" class="amar fab fa-instagram-square"></i></a>
-    </div>
+    <script src="./javascript/read_places.js"></script>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     
-    
-    
-    <div class="extra">
-    <a href="#">centro de ayuda</a>
-    <a href="#">terminos y condiciones</a>
-    <a href="#">proteccion de datos</a>
-    <a href="#">libro de reclamaciones</a>
-    </div>
-    </div>
-</article>
-
-
-
-<footer class="pie_de_pagina_footer">
-
-<div class="turistea">
-    <h1 class="imagen3">
-        <img class="logo_imagen" src="./imagenes/logo1.jpeg" width="" alt="">
-    </h1>
-   
-</div>
-
- <div class="parrafo_final"><p>AV.Javier Prado 1010, San Isidro - Lima - Perú</p></div>
-</footer>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="/javascript/javascript.js"></script>
-    <script src="./javascript/javascript.js"></script>
-
-
 </body>
 </html>
