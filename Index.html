@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        .fondo1{
+            background-color: green;
+            
+            color:white;
+                }
+        .fondo2{
+            background-color: orange; 
+            color:black;
+                }
+        .fondo3{
+            background-color: purple; 
+            color:white;
+                }
+        .heig{
+            height: 180px;
+            border:1px black;
+        } 
+
+        #Publicidad img{
+            width: 100%;
+            height: 300px;
+            padding: 25px;
+            margin: 0px !important;
+        } 
+        .carusel{
+             height: 20% !important;
+             width: 70% !important;
+        }
+    </style>
+ 
+    <div class="container-fluid fondo2  " id="Menu">
+        <nav class="navbar d-flex justify-content-evenly">
+            <a href="#">Inicio</a>
+            <a href="#">Inicio</a>
+            <a href="#">Inicio</a>
+            <a href="#">Inicio</a>
+        </nav>
+    </div>
+
+    <section class="carusel fondo2 " id="Imagenes" >
+        <div id="carouselExampleInterval carusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./imagenes/Fondo1.jpg" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item min-vh-100"  data-bs-interval="2000">
+                <img src="./imagenes/Fondo2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item min-vh-100">
+                <img src="./imagenes/Fondo.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section> 
+
+    <div class="container fondo1 " id="buscador_viaje">
+        <h1 class="conocer text-center">Hola, ¿A dónde nos vamos de viaje?</h1>
+        <div class="d-flex justify-content-center">
+       <form action="#"> 
+            <input list="destinos_de_ida"  placeholder="De donde viaja" id="d_ida">
+            <datalist id="destinos_de_ida">
+                <option disabled value="select"></option>
+                <option value="lima"></option>
+                <option value="cusco"></option>
+                <option value="trujillo"></option>
+                <option value="piura"></option>
+                <option value="chimbote"></option>
+                <option value="cajamarca"></option>
+            </datalist>
+            <input list="destinos_turisticos"   placeholder="A donde viaja" id="d_tur">
+            <datalist id="destinos_turisticos">
+                <option disabled value="selecciona"></option>
+                <option value="lima"></option> 
+                <option value="cuzco"></option>
+                <option value="cajamarca"></option>
+                <option value="piura"></option>
+                <option value="chimbote"></option>
+                <option value="arequipa"></option>
+            </datalist> 
+                <input type="datetime-local" class="input_calendarios1" id="fet"> 
+                <input type="datetime-local" class="input_calendarios2" value="Fecha de salida"> 
+                <button class="boton enviado" onclick=myFunction()><span>Enviar</span></button> 
+       </form> 
+        </div>    
+    </div>
+
+    <div class="container fondo2 " id="Resultado"></div> 
+
+    <section class="container fondo2" id="Publicidad"> 
+        <h1 >Conoce nuestros destinos y Viaja</h1> 
+        <div class="row"> 
+            <div class="col-lg-4"><img src="./imagenes/imagen1.jpeg" alt=""></div>
+            <div class="col-lg-4"><img src="./imagenes/imagen2.jpeg" alt=""></div> 
+            <div class="col-lg-4"><img src="./imagenes/imagen3.jpeg" alt=""></div>
+            <div class="col-lg-4"><img src="./imagenes/imagen4.jpeg" alt=""></div>
+            <div class="col-lg-4"><img src="./imagenes/imagen5.jpeg" alt=""></div>
+            <div class="col-lg-4"><img src="./imagenes/imagen6.jpeg" alt=""></div>
+            
+        </div>
+    </section> 
+
+    <script src="./javascript/read_places.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+</body>
+</html>
