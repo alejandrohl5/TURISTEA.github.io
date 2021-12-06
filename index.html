@@ -33,6 +33,7 @@
             padding: 25px;
             margin: 0px !important;
         } 
+
         .carusel{
              height: 20% !important;
              width: 70% !important;
@@ -48,7 +49,7 @@
         </nav>
     </div>
 
-    <section class="carusel fondo2 " id="Imagenes" >
+    <section class="carusel fondo2 d-none " id="Imagenes" >
         <div id="carouselExampleInterval carusel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="3000">
@@ -75,32 +76,32 @@
     <div class="container fondo1 " id="buscador_viaje">
         <h1 class="conocer text-center">Hola, ¿A dónde nos vamos de viaje?</h1>
         <div class="d-flex justify-content-center">
-       <form action="#"> 
-            <input list="destinos_de_ida"  placeholder="De donde viaja" id="d_ida">
-            <datalist id="destinos_de_ida">
-                <option disabled value="select"></option>
-                <option value="lima"></option>
-                <option value="cusco"></option>
-                <option value="trujillo"></option>
-                <option value="piura"></option>
-                <option value="chimbote"></option>
-                <option value="cajamarca"></option>
-            </datalist>
-            <input list="destinos_turisticos"   placeholder="A donde viaja" id="d_tur">
-            <datalist id="destinos_turisticos">
-                <option disabled value="selecciona"></option>
-                <option value="lima"></option> 
-                <option value="cuzco"></option>
-                <option value="cajamarca"></option>
-                <option value="piura"></option>
-                <option value="chimbote"></option>
-                <option value="arequipa"></option>
-            </datalist> 
-                <input type="datetime-local" class="input_calendarios1" id="fet"> 
-                <input type="datetime-local" class="input_calendarios2" value="Fecha de salida"> 
-                <button class="boton enviado" onclick=myFunction()><span>Enviar</span></button> 
-       </form> 
+        
         </div>    
+              <select name="destinos_turisticos" id="d_ida">
+                <option value="lima">Lima</option>
+                <option value="cusco">Cusco</option>
+                <option value="trujillo">Trujillo</option>
+                <option value="piura">Piura</option>
+                <option value="chimbote">Chimbote</option>
+                <option value="cajamarca">Cajamarca</option>
+            </select>
+        
+            <select name="destinos_turisticos" id="d_tur">
+                <option disabled value="select"></option>
+                <option value="lima">Lima</option>
+                <option value="cusco">Cusco</option>
+                <option value="trujillo">Trujillo</option>
+                <option value="piura">Piura</option>
+                <option value="tarapoto">Tarapoto</option>
+                <option value="ayacucho">Ayacucho</option>
+            </select>
+        
+            <input type="datetime-local" class="input_calendarios1" id="fet">
+            <input type="datetime-local" class="input_calendarios2" value="Fecha de salida">
+            <button class="boton enviado" onclick=myFunction()><span>Enviar</span></button>
+            <!-- </form>  -->
+        </div>
     </div>
 
     <div class="container fondo2 " id="Resultado"></div> 
