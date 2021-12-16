@@ -24,7 +24,7 @@ function Validar_Login(){
 // consultamos a la base de datos el usuario
  async function Confirmar_login(){  
         
-            var URL4= 'http://localhost:58683/api/cuentas?id='+ document.getElementById("correo").value 
+            var URL4= 'https://webapi20211215215815.azurewebsites.net/api/cuentas?id='+ document.getElementById("correo").value 
             const response  = await fetch(URL4)  
             const usr = await response.json();
             console.log(usr.Password)
@@ -135,7 +135,7 @@ function Guardar_nuevo(){
             
         console.log("Prueba Api:")
 
-        var UrlApi = "http://localhost:58683/api/Cuentas/"
+        var UrlApi = "https://webapi20211215215815.azurewebsites.net/api/Cuentas/"
 
             fetch(UrlApi,Cuerpo)
             .then((response) => {return response.json() })
@@ -186,7 +186,7 @@ function Recuperar(){
 function EnviarCorreo(){
 
     var tmp_correos=document.getElementById("recupera_correo").value
-    var UrlApi = 'http://localhost:58683/api/recuperar?id='+tmp_correos
+    var UrlApi = 'http://190.117.100.177:4040/api/recuperar?id='+tmp_correos
     
     fetch(UrlApi)
     .then((response) => {

@@ -11,7 +11,7 @@ function Misdatos(){
         }) 
  
     var id=localStorage.getItem('usr_id')
-    var UrlApi = "http://localhost:58683/api/cuentas?id="+id
+    var UrlApi = "https://webapi20211215215815.azurewebsites.net/api/cuentas?id="+id
     
                 fetch(UrlApi)
                 .then((response) => {
@@ -76,7 +76,7 @@ function EnviarModificar(){
             
         console.log("Prueba Api:")
 
-        var UrlApi = "http://localhost:58683/api/Cuentas/"
+        var UrlApi = "https://webapi20211215215815.azurewebsites.net/api/Cuentas/"
 
             fetch(UrlApi,Cuerpo)
             .then((response) => {return response.json() })
@@ -102,7 +102,7 @@ function EnviarModificar(){
 
 function Misviajes(){
   var id=localStorage.getItem('usr_id')
-  var url451="http://localhost:58683/api/Rolo?usuario="+id;
+  var url451="https://webapi20211215215815.azurewebsites.net/api/Rolo?usuario="+id;
   html_temporal=document.getElementById("reveal-datos").innerHTML;
   document.getElementById("reveal-datos").innerHTML=''
   fetch(url451)
