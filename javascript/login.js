@@ -186,7 +186,7 @@ function Recuperar(){
 function EnviarCorreo(){
 
     var tmp_correos=document.getElementById("recupera_correo").value
-    var UrlApi = 'http://190.117.100.177:4040/api/recuperar?id='+tmp_correos
+    var UrlApi = 'https://webapi20211215215815.azurewebsites.net/api/recuperar?id='+tmp_correos
     
     fetch(UrlApi)
     .then((response) => {
