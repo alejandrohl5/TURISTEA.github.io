@@ -1,0 +1,129 @@
+ 
+    <div class="d-inline-block   m-4" style="background: EFFADA;">
+        <div class="d-flex ">
+
+            <div class="flip-card mt-3" id="tarjeta">
+                <div class="flip-card-inner" id="tarjeta2">
+                <div class="flip-card-back">
+                    <!-- <img src="./imagenes/Fondo_buscador.jpg" alt="Avatar" style="width:300px;height:300px;"> -->
+                    <div id="superior" class="border border-2 rounded-3     ">
+                        <div class=" w-100" style="height: 10%;"> </div>
+                        <div class="  w-100  h-25    bg-dark  " id="Franja"> </div>
+                        <div class="w-100 h-75     text-center  ">
+                            <div class="w-100 h-auto   "><br></div>
+                            <div class="w-75   d-inline-block   ">
+                                <div class="row ">
+                                    <div class="col-9 bg-white p-0  ">
+                                        <div class="w-100 d-flex h-25 bg-white "></div>
+                                        <div class="w-100 d-flex h-25 mt-1 bg-dark  "></div>
+                                        <div class="w-100 d-flex h-25 bg-white  "></div>
+                                    </div>
+                                    <div class="col-3 p-0 bg-white ">
+                                        <div class="w-100 h-auto d-inline-block bg-white text-dark " id="value_ccvv">0000</div>
+                                    </div>
+                                </div>
+                                <div class=" d-inline-block text-decoration-underline  ">codigo de seguridad</div>
+                            </div>
+                            <div class="w-100 h-auto   "><br></div>
+                            <div class="w-100 h-auto   "><br></div>
+                    
+                            <div class="w-50  bg-white d-inline-block" style="height: 5%;">
+                                <br>
+                            </div>
+                            <div class="w-25 bg-white d-inline-block" style="height: 5%;">
+                                <br>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="flip-card-front">
+                    <!-- <h1>John Doe</h1> 
+                    <p>Architect & Engineer</p> 
+                    <p>We love that guy</p> --> 
+                    <div id="inferior" class="border border-2 rounded-3"> 
+                        <div class=" w-100 p-4" style="height: 30%;">
+                            <div class=" w-25 bg-white rounded-pill" style="height: 80%; "></div>
+                        </div> 
+                        <div  class="w-100 " style="height: 70%;">
+                            <div class="w-100   text-white  border-white"style="height: 45%;-webkit-text-stroke: .2px black;">
+                            <label class="h5 px-4" for="Ntarjeta">Numero de Tarjeta</label><br>
+                            <label class="h3 px-4" for="Ntarjeta_n" id="value_ntarjeta">1234 1234 1234 1234</label>
+                            </div> 
+                            <div class="mt-3 w-100 d-flex  text-white  border-white"style="height: 45% ; ">
+                            <div class="w-50">
+                                <label class="h5 px-4" for="Ntarjeta"> Titular</label><br>
+                                <label class="  px-4" for="Ntarjeta_n" style="font-size: 120%;" id="value_ntitular">Pedro Suarez</label>
+                            </div>
+                            <div class="w-50">
+                                <label class="h5 px-4" for="Ntarjeta"> Expiración</label><br>
+                                <label class="  px-4" for="Ntarjeta_n" style="font-size: 120%;" id="value_fvencimiento">2011-02 </label>
+                            </div>
+                            
+                            </div> 
+                
+                        </div>
+                    </div> 
+                </div>
+                </div>
+            </div>
+
+            <div class="p-3 border-secondary border rounded-3 " style="width: 50%;" id="validacion_tarjeta">
+            
+                <div class="form-group" id="ntarjeta">
+                    <label for="exampleInputEmail1">Numero de Tarjeta</label>
+                    <input type="text" class="form-control" id="ntarjeta_ingresado" placeholder="0000 0000 0000 0000"
+                        maxlength="16" onkeypress="return valideKey(event);">
+                </div>
+            
+                <div class="form-group" id="ntitular">
+                    <label for="exampleInputPassword1">Nombre del Titular</label>
+                    <input type="text" class="form-control" id="ntitular_ingresado" placeholder="Pedro Suarez " maxlength="15" onkeypress="return valideKey(event);">
+                </div>
+                <div class="form-group row-cols-2 d-flex" id="fechayccvv">
+                    <div class="col">
+                        <label for="exampleInputPassword1">F. de vencimiento</label>
+                        <input type="month" class="form-control" id="f_vencimiento" min="2016-12" max="2040-12" size="40" onchange="renommbrar_fecha()">
+                    </div>
+                    <div class="col">
+                        <label for="exampleInputPassword1">Codigo CCVV</label>
+                        <input type="text" class="form-control" id="ccvv_ingresado" maxlength="4" placeholder="1234" onkeypress="return valideKey(event);"  onblur="deshover();" onfocus="hover();">
+                    </div>
+            
+                </div>
+            
+                <div class="form-check" id="recordaryboton">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Recordar</label> 
+                </div>
+                <!-- <button type="button" class="btn btn-outline-primary" onclick="Reservar();" >Pagar</button> -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="Reservar();">
+                   Pagar
+                  </button>
+                <button type="button" class="btn btn-outline-primary" onclick="Limpiar();" >Limpiar</button>
+            </div>
+         
+        </div> 
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" id="Resultado_Compra">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">!Compra Exitosa!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" >
+                <ul class="list-group list-group-flush" id="Resultado_Compra_cuerpo">
+                     
+                  </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="location.reload();">Entendido</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ 
+     
