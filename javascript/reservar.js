@@ -21,7 +21,7 @@ function Reservar() {
 
   console.log("Prueba Api:")
 
-  var UrlApi = url_conexion+"/api/viaje/"
+  var UrlApi = "https://webapi20211215215815.azurewebsites.net/api/viaje/"
 
   fetch(UrlApi, Cuerpo)
     .then((response) => { return response.json() })

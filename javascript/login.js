@@ -1,28 +1,7 @@
 var html_temporal;
-var url_conexion="https://webapi20211215215815.azurewebsites.net";
 
 // validar si esta logeado o no
 function Validar_Login(){
-    localStorage.setItem("usr_asientos", asientos_seleccionados) ;
-    var user_local=localStorage.getItem("usr_id")
-    if(user_local==''||user_local==null){
-        // alert("Falta iniciar sesión")
-        var url3="./páginas/inciar_sesion.html";
-        fetch(url3)
-            .then((response) => response.text())
-            .then(function (html){ 
-                document.getElementById("info_general").style.visibility ="hidden"
-                document.getElementById("Visualizar_login").innerHTML = html;   
-            }) 
-             
-    }
-    else{
-        // alert("Momento de Pagar")
-        // Load_Pay()
-    }
-}
-
-function Validar_Login2(){
     localStorage.setItem("usr_asientos", asientos_seleccionados) ;
     var user_local=localStorage.getItem("usr_id")
     if(user_local==''||user_local==null){
@@ -45,7 +24,7 @@ function Validar_Login2(){
 // consultamos a la base de datos el usuario
  async function Confirmar_login(){  
         
-            var URL4= url_conexion+'/api/cuentas?id='+ document.getElementById("correo").value 
+            var URL4= 'https://webapi20211215215815.azurewebsites.net/api/cuentas?id='+ document.getElementById("correo").value 
             const response  = await fetch(URL4)  
             const usr = await response.json();
             console.log(usr.Password)
@@ -92,27 +71,20 @@ function CerraSesion(){
 
 // mostrar el usuario que esta registrado
 function myFunction2(){
-
-    intermedio()
-
-
+    // alert("Ya cargo")
+    // localStorage.setItem('usr_id','')
+    // localStorage.setItem('usr_nombre','')
     var xxx=localStorage.getItem("usr_id")
     if(xxx==''||xxx==null){ 
-        
         document.getElementById("Logeo-img").innerHTML="Iniciar Sesión"
         document.getElementById("Logeo-img").onclick = Validar_Login
-        // document.getElementById("Menu-login").style.visibility="hidden"
+        document.getElementById("Menu-login").style.visibility="hidden"
     }
-    else{ 
+    else{
         document.getElementById("Logeo-img").innerHTML= localStorage.getItem('usr_id')
-        // document.getElementById("Menu-login").style.visibility="visible"
+        document.getElementById("Menu-login").style.visibility="visible"
 
     }
-
-
-
-
-
 
 }
   
@@ -163,7 +135,7 @@ function Guardar_nuevo(){
             
         console.log("Prueba Api:")
 
-        var UrlApi = "http://localhost:58683/api/Cuentas/"
+        var UrlApi = "https://webapi20211215215815.azurewebsites.net/api/Cuentas/"
 
             fetch(UrlApi,Cuerpo)
             .then((response) => {return response.json() })
@@ -214,7 +186,7 @@ function Recuperar(){
 function EnviarCorreo(){
 
     var tmp_correos=document.getElementById("recupera_correo").value
-    var UrlApi = url_conexion+'/api/recuperar?id='+tmp_correos
+    var UrlApi = 'https://webapi20211215215815.azurewebsites.net/api/recuperar?id='+tmp_correos
     
     fetch(UrlApi)
     .then((response) => {
@@ -245,5 +217,3 @@ function RegresarEnvioCorreo(){
     document.getElementById("info_general").innerHTML=html_temporal
     document.getElementById("Visualizar_login").style.visibility="hidden"
 }
-
- 

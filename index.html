@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turistea</title> 
+    <title>Inicio</title> 
     <link rel="stylesheet" href="./css/styles_app_asientos.css">
     <link rel="stylesheet" href="./css/iniciar_sesion.css"> 
-    <link rel="stylesheet" href="./css/pasarela.css">  
-    <link rel="stylesheet" href="./css/turistea.css">
+    <link rel="stylesheet" href="./css/pasarela.css"> 
+
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body id="body" onload="myFunction2()"   >
+<body id="body" onload="myFunction2()">
     <style>
         .img  {
         max-width: 100% !important; 
@@ -46,17 +47,10 @@
             height: 800px;
         }
 
-        #body{ 
-             font-family: cursive; 
-            /* background-image: 
-            url("imagenes/fondo-principal.jpg"); */
-        }
+        /* #body{
+            background-image: url("imagenes/fondo-principal.jpg"); 
+        } */
         
-        #buscador_viaje{
-            background: rgb(52,178,226);
-            background: linear-gradient(90deg, rgba(52,178,226,1) 0%, rgba(39,69,152,1) 47%, rgba(0,212,255,1) 100%);
-        }
-
         /* #buscador_viaje{
     background-color: rgb(20, 131, 204);  
     color: white;
@@ -67,13 +61,7 @@
         
     </style>
 
-    <div id="container " class=" align-items-center bodys   ">
-
-        <div id="turistea" class="bg bg-info" ><p>Experiencias unicas <span> TURISTEA </span> &mdash; #Pongoelhombro &mdash;</p> </div>
-    <div id="cargas" class="d-block mt-5 pt-4 "></div>
-
-    <div id="Todo" class="d-block">     
-   <div class="container-fluid" id="info_general" > 
+    <div class="container-fluid" id="info_general">
          <div class="container-fluid" id="Menu"  >  
                 <div class="sub-menu d-flex justify-content-evenly ">
                     <button type="button" class="btn btn-outline-dark my-3">Inicio</button>
@@ -92,7 +80,7 @@
                 </div>  
          </div>
          <div class="reveal-datos" id="reveal-datos">
-            <div class="container  img-fluid   border rounded-3 text-white " id="buscador_viaje">
+            <div class="container  img-fluid bg-primary bg-gradient border rounded-3 text-white " id="buscador_viaje">
                 <h1 class="conocer text-center">Hola, ¿A dónde nos vamos de viaje?</h1>
                 <div class="d-flex justify-content-evenly">
                 <div class=" form-floating d-lg-inline justify-content-evenly   ">
@@ -117,7 +105,8 @@
                     </select>
                     <label for="d_tur" class="text-dark ">Destino</label>
                     
-                     
+                    <!-- <input type="datetime-local" class="input_calendarios2" value="Fecha de salida"> -->
+                    
                 </div>
                 <div class=" form-floating d-flex justify-content-evenly  ">   
                     <input type="datetime-local" class="form-select form-control-lg-3 " id="fet">
@@ -136,7 +125,8 @@
                         <div class="container text-center pt-4  s" id="Publicidad "> 
                                 <h1>Conoce nuestros buses :)</h1>
                                 
-                                 <iframe width="900" height="600" src="https://www.youtube.com/embed/3o4tzjtcfU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- <iframe  class="embed-responsive-item pt-4" src="https://streamtape.com/e/yPzz92Q6j3i1Alo/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe> -->
+                                <iframe width="900" height="600" src="https://www.youtube.com/embed/3o4tzjtcfU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div> 
                     
                     </div>
@@ -250,7 +240,7 @@
                         <a href="">Mapa del Sitio</a><br>
                         <a href="">Empresas</a><br>
                         </div>
-                        <div class="col   border-start border-light">
+                        <div class="col">
                             Turistea es el mayor servicio de compra de pasajes de bus por internet, usado por más de 25 millones de viajeros en el mundo. Su plataforma ingresó al Perú, luego de adquirir a Busportal.pe -líder local en venta de pasajes de bus- cambiándose el nombre de Busportal.pe por Turistea.pe, en un esfuerzo conjunto por mejorar la calidad del servicio y brindar mayores beneficios a todos los usuarios. A través de su nueva página web y moderna aplicación móvil (IOS/Android), Turistea ofrece pasajes de bus para las rutas más importantes de Latinoamérica (Perú y Colombia).
                         </div> 
                     </div>
@@ -261,21 +251,14 @@
  
     </div>
  
-    <div class="container" id="Visualizar_login"></div> 
-    
-    </div>
-    </div>
-
+    <div class="container" id="Visualizar_login"></div>
+ 
     <script src="./javascript/read_places.js"></script>  
     <script src="./javascript/login.js"></script>
     <script src="./javascript/pasarela.js"></script>
     <script src="./javascript/reservar.js"></script>  
     <script src="/javascript/Personales.js"></script>
-    <script src="./javascript/Intermedio.js"></script>
-    <script src="./javascript/turistea.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
- 
-
-</body>
+   </body>
 </html>
