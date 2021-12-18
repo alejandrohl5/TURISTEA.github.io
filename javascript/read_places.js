@@ -15,7 +15,7 @@ function  myFunction() {
 
 
     document.getElementById("Resultado").innerHTML=''
-    var URL = url_conexion+"/api/viaje?origen="+destino_a+"&destino="+destino_b+"&fecha_salida="+fecha_a
+    var URL = "https://webapi20211215215815.azurewebsites.net/api/viaje?origen="+destino_a+"&destino="+destino_b+"&fecha_salida="+fecha_a
      
     fetch(URL)
         .then(response => response.json())  
@@ -26,6 +26,7 @@ function  myFunction() {
             let almacenar=data;
             
             for (var item=0;item<almacenar2;item++){
+
                 // console.log(almacenar[item].codigo)
                 // document.getElementById("Resultado").innerHTML+=almacenar[item].codigo+'<br>'
                 

@@ -1,21 +1,17 @@
-var html2;
-
 // Mostrar los datos para luego modificarlos
 function Misdatos(){
 
-   intermedio()
     var url45="./páginas/Misdatos.html";
     fetch(url45)
         .then((response) => response.text())
         .then(function (html){ 
-            html2=document.getElementById("Menu").innerHTML;
             html_temporal=document.getElementById("reveal-datos").innerHTML;
             document.getElementById("reveal-datos").style.display = "none";
             document.getElementById("Visualizar_login").innerHTML = html;   
         }) 
  
     var id=localStorage.getItem('usr_id')
-    var UrlApi = url_conexion+"/api/cuentas?id="+id
+    var UrlApi = "https://webapi20211215215815.azurewebsites.net/api/cuentas?id="+id
     
                 fetch(UrlApi)
                 .then((response) => {
@@ -45,7 +41,6 @@ function Misdatos(){
  
 // Enviar a modificar los datos
 function EnviarModificar(){
-  intermedio()
     var tmp_idusr= document.getElementById("form_idusuario_recuperado").value
     var tmp_nombe= document.getElementById("form_nombre_recuperado").value
     var tmp_correo= document.getElementById("form_correo_recuperado").value
@@ -80,7 +75,7 @@ function EnviarModificar(){
             
         console.log("Prueba Api:")
 
-        var UrlApi = url_conexion+"/api/Cuentas/"
+        var UrlApi = "https://webapi20211215215815.azurewebsites.net/api/Cuentas/"
 
             fetch(UrlApi,Cuerpo)
             .then((response) => {return response.json() })
@@ -105,9 +100,8 @@ function EnviarModificar(){
 
 
 function Misviajes(){
-  intermedio()
   var id=localStorage.getItem('usr_id')
-  var url451=url_conexion+"/api/Rolo?usuario="+id;
+  var url451="https://webapi20211215215815.azurewebsites.net/api/Rolo?usuario="+id;
   html_temporal=document.getElementById("reveal-datos").innerHTML;
   document.getElementById("reveal-datos").innerHTML=''
   fetch(url451)
@@ -129,10 +123,6 @@ function Misviajes(){
 
 //volver de ver los viajes
 function volver() {
-  intermedio()
-  document.getElementById("Menu").innerHTML=html2; 
   document.getElementById("reveal-datos").innerHTML=''
   document.getElementById("reveal-datos").innerHTML=html_temporal
-  document.getElementById("Visualizar_login").innerHTML = '';   
-  document.getElementById("reveal-datos").style.display = "block";
 }
