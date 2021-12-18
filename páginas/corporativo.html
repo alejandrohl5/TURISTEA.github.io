@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/destinos.css">
-    <script src="https://kit.fontawesome.com/0e65fc2f8c.js" crossorigin="anonymous"></script>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Turistea</title> 
+		<link rel="stylesheet" href="./css/styles_app_asientos.css">
+		<link rel="stylesheet" href="./css/iniciar_sesion.css"> 
+		<link rel="stylesheet" href="./css/pasarela.css">  
+		<link rel="stylesheet" href="./css/turistea.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	</head>
 <body>
     
     <header> 
@@ -56,9 +59,9 @@
 	<main>
 		<form action="" class="formulario" id="formulario">
 			<!-- Grupo: Usuario -->
-			<div class="formulario__grupo" id="grupo__usuario">
+			<div class="form-control" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Usuario</label>
-				<div class="formulario__grupo-input">
+				<div class="form-control-input">
 					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
@@ -66,9 +69,9 @@
 			</div>
 
 			<!-- Grupo: Nombre -->
-			<div class="formulario__grupo" id="grupo__nombre">
+			<div class="form-control" id="grupo__nombre">
 				<label for="nombre" class="formulario__label">Nombre</label>
-				<div class="formulario__grupo-input">
+				<div class="form-control-input">
 					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
@@ -76,9 +79,9 @@
 			</div>
 
 			<!-- Grupo: Contraseña -->
-			<div class="formulario__grupo" id="grupo__password">
+			<div class="form-control" id="grupo__password">
 				<label for="password" class="formulario__label">Contraseña</label>
-				<div class="formulario__grupo-input">
+				<div class="form-control-input">
 					<input type="password" class="formulario__input" name="password" id="password">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
@@ -86,9 +89,9 @@
 			</div>
 
 			<!-- Grupo: Contraseña 2 -->
-			<div class="formulario__grupo" id="grupo__password2">
+			<div class="form-control" id="grupo__password2">
 				<label for="password2" class="formulario__label">Repetir Contraseña</label>
-				<div class="formulario__grupo-input">
+				<div class="form-control-input">
 					<input type="password" class="formulario__input" name="password2" id="password2">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
@@ -96,9 +99,9 @@
 			</div>
 
 			<!-- Grupo: Correo Electronico -->
-			<div class="formulario__grupo" id="grupo__correo">
+			<div class="form-control" id="grupo__correo">
 				<label for="correo" class="formulario__label">Correo Electrónico</label>
-				<div class="formulario__grupo-input">
+				<div class="form-control-input">
 					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
@@ -106,9 +109,9 @@
 			</div>
 
 			<!-- Grupo: Teléfono -->
-			<div class="formulario__grupo" id="grupo__telefono">
+			<div class="form-control" id="grupo__telefono">
 				<label for="telefono" class="formulario__label">Teléfono</label>
-				<div class="formulario__grupo-input">
+				<div class="form-control-input">
 					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
@@ -116,7 +119,7 @@
 			</div>
 
 			<!-- Grupo: Terminos y Condiciones -->
-			<div class="formulario__grupo" id="grupo__terminos">
+			<div class="form-control" id="grupo__terminos">
 				<label class="formulario__label">
 					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
 					Acepto los Terminos y Condiciones
@@ -127,7 +130,7 @@
 				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
 			</div>
 
-			<div class="formulario__grupo formulario__grupo-btn-enviar">
+			<div class="form-control form-control-btn-enviar">
 				<button type="submit" class="formulario__btn">Enviar</button>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
@@ -159,9 +162,15 @@
 
 
 
-
-<script src="./javascript/corporativo.js"></script>
-
+<script src="./javascript/read_places.js"></script>  
+<script src="./javascript/login.js"></script>
+<script src="./javascript/pasarela.js"></script>
+<script src="./javascript/reservar.js"></script>  
+<script src="/javascript/Personales.js"></script>
+<script src="./javascript/Intermedio.js"></script>
+<script src="./javascript/turistea.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
 

@@ -1,57 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/iniciar_sesion.css">
-    <script src="https://kit.fontawesome.com/0e65fc2f8c.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-            
-
-      <div class="animcacion_imagen">
-          
-      </div>
 
 
+      <!-- <div class="animcacion_imagen"> 
+      </div>   -->
+        <div class="login-box bg bg-secondary bg-gradient" style="height: 60% !important;">
 
-        <div class="login-box">
-
-            <img class="avatar" src="../imagenes/logo1.jpeg" alt="logo de tocsac">
+            <img class="avatar" src="./imagenes/logo1.jpeg" alt="logo de tocsac">
       
             <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;"><b><em>Ingresa aquí</em></b></h1>
-      
-            <form id="formulario_login">
+       
               <!-- username -->
-              <h3 class="correo">CORREO</h3>
-              <input id="correo" type="email" placeholder="Ingrese su Email">
+              <h3 class="correo">Usuario</h3>
+              <input id="correo" class="  border border-white  border-bottom-0 border-3 text-white " type="email" placeholder="Ingrese su Email">
               <!-- password -->
-              <h3 class="contrasena"> CONTRASEÑA</h3>
-              <input type="password" id="contrasena" placeholder="Ingrese su contraseña">
+              <h3 class="contrasena text-white"> Contraseña</h3>
+              <input type="password" id="contrasena" class=" border border-white border-bottom-0  border-3 text-white   " placeholder="Ingrese su contraseña">
       
-              <button type="submit" id="boton_registro" style="font-family: Georgia, 'Times New Roman', Times, serif;" class="boton_registro boton_activo"><b><em>REGISTRARSE</em></b></button> <br>
-      
-              <div class="no">
-                <a href="#">Olvidaste tu contraseña?</a> <br>
-                <a href="#">No tienes una cuenta?</a>
-              </div>
-            </form>
+              <!-- <button type="submit" id="boton_registro" style="font-family: Georgia, 'Times New Roman', Times, serif;" class="boton_registro boton_activo" onclick=Confirmar_login()><b><em>REGISTRARSE</em></b></button> <br> -->
+              <button type="button" class="btn btn-light btn-outline-dark  " onclick=Confirmar_login() id="boton_registro">Registrarse</button>
+
+              <div class="d-inline-block w-100 my-4 text-center" style="height: 40%;">
+                <button type="button" class="btn btn-primary m-1"onclick="Recuperar();" >Olvidaste tu contraseña?</button>
+                <button type="button" class="btn btn-primary m-1" onclick="Registrate()">No tienes una cuenta?</button> 
+                 
+
+              </div> 
           </div>
-
-
-
-
-
-
-
-
-
-
-</header>
-
-
-</body>
-</html>
