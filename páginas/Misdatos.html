@@ -1,0 +1,60 @@
+<div class="container">
+
+    <div class="w-100 vh-100  mt-5 ">
+        <form class="row g-3" >
+            <div class="container h-75 w-25 bg bg-success text-white bg-gradient border-3 g-3 w-50  ">
+                <div class="container-fluid text-center">
+                <h1 >Modificar datos</h1> </div>
+                <div id="form-cel-usuario" class="row  px-5    ">
+                    <div class="col-6 ">
+                        <label for="exampleinputEmail1" class="form-label  ">Id de Usuario</label>
+                        <input type="text" class="form-control w-100" required id="form_idusuario_recuperado"  maxlength="8"></input>
+                    </div>
+                    <div class="col-6 ">
+                        <label for="exampleinputEmail1" class="form-label  ">DNI</label>
+                        <input type="text" class="form-control w-100"  maxlength="8" id="form_dni_recuperado"></input>
+                    </div>
+                </div>
+                <div id="nombre-form" class="mx-5">
+                    <label for="exampleinputEmail1" class="form-label ">Nombres</label>
+                    <input type="text" class="form-control w-75 " required  id="form_nombre_recuperado"></input>
+                </div>
+                <div id="correo-form " class="mx-5">
+                    <label for="exampleinputEmail1" class="form-label  s">Correo</label>
+                    <input type="email" class="form-control w-75 "  required id="form_correo_recuperado"></input>
+                </div>
+                <div id="clave-form " class="mx-5">
+                    <label for="exampleinputEmail1" class="form-label  s">Contraseña</label>
+                    <input type="text" class="form-control w-75 "  required id="form_contra_recuperado"></input>
+                </div>
+                <div id="dni-ciudad-form " class="row px-5">
+                    <div class="col-6 ">
+                        <label for="exampleinputEmail1" class="form-label   ">Celular</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">+51</span>
+                            <input type="text" class="form-control" 
+                                aria-describedby="inputGroupPrepend2" maxlength="9" required id="form_cel_recuperado">
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <label for="exampleinputEmail1" class="form-label   ">Ciudad</label>
+                        <input type="text" class="form-control w-100"   required id="form_ciudad_recuperado"></input>
+                    </div>
+                </div>
+                <div class="col-12 mx-5 my-3 d-flex mx-3">
+                    <button class="btn btn-dark  btn-outline-light" type="button" onclick="EnviarModificar(); "> Modificar</button>
+                    <button type="button" class="tn btn-dark  btn-outline-light" onclick="volver()">Regresar</button>
+
+                  </div>
+                
+            </div>
+         </div>
+         <div> 
+        </form>
+    </div> 
+
+
+</div>
+ 
+
+
